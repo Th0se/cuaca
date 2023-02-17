@@ -1,0 +1,44 @@
+{
+    "coord": {
+        "lon": 111.9224,
+        "lat": -6.7872
+    },
+    "weather": [
+        {
+            "id": 804,
+            "main": "Clouds",
+            "description": "overcast clouds",
+            "icon": "04n"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 299.12,
+        "feels_like": 299.12,
+        "temp_min": 299.12,
+        "temp_max": 299.12,
+        "pressure": 1009,
+        "humidity": 87,
+        "sea_level": 1009,
+        "grnd_level": 1009
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 4.52,
+        "deg": 273,
+        "gust": 7.02
+    },
+    "clouds": {
+        "all": 100
+    },
+    "dt": 1676643248,
+    "sys": {
+        "country": "ID",
+        "sunrise": 1676587031,
+        "sunset": 1676631350
+    },
+    "timezone": 25200,
+    "id": 1630327,
+    "name": "Purworejo",
+    "cod": 200
+}
