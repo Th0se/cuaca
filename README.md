@@ -1,2 +1,2 @@
 # cuaca
-## do not merge! Store notes only.
+## Jangan dipakai. Aplikasi ini dibuat hanya untuk demonstrasi API, dan bukan untuk digunakan secara rutin.
