@@ -1,5 +1,8 @@
-const body = document.body;
-body.style.backgroundColor = `green`;
+import {
+    motherContainer
+} from './UI.js';
+
+document.body.appendChild(motherContainer());
 
 let target = `Purworejo`;
 
@@ -16,8 +19,10 @@ const obtain = async () => {
         console.log(error);
     };
 };
-
+/* This is just a placeholder
 obtain().then(data => {
     console.log(data);
     body.textContent = `${data.main.temp}`;
 });
+
+*/
