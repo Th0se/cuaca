@@ -4,7 +4,7 @@ const key = () => {
     
     const input = document.createElement(`input`);
     input.setAttribute(`type`, `text`);
-    input.setAttribute(`id`, `APIkeyField`);
+    input.setAttribute(`id`, `APIKeyField`);
     input.classList.add(
         `bg-teal-500`,
     );
@@ -29,6 +29,7 @@ const location = () => {
     const input = document.createElement(`input`);
     input.setAttribute(`type`, `text`);
     input.setAttribute(`id`, `locationField`);
+    input.setAttribute(`placeholder`, `London,UK`);
     input.classList.add(
         `bg-teal-500`,
     );
@@ -57,6 +58,8 @@ const processButton = () => {
         `col-start-2`,
         `col-end-4`,
         `row-span-2`,
+        `bg-slate-400`,
+        `hover:bg-slate-200`,
     )
 
     return button;

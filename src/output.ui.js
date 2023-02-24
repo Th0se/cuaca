@@ -9,9 +9,9 @@ const minTemp = () => {
 
     const info = document.createElement(`div`);
     info.classList.add(`infoDisplay`);
+    info.setAttribute(`id`, `minimumTemperature`)
 
     const container = document.createElement(`div`);
-    container.setAttribute(`id`, `minimumTemperature`);
     container.classList.add(
         `border-solid`,
         `border-amber-500`,

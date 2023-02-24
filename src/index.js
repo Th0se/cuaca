@@ -4,11 +4,11 @@ import {
 } from './UI.js';
 document.body.appendChild(UI());
 
-let target = `Purworejo`;
+
 
 const obtain = async () => {
     try {
-        const take = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${target}&APPID=ec59ecd5331cbd0c02d07bfa40c4117f`, {
+        const take = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${document.querySelector('#locationField').value}&APPID=${document.querySelector('#APIKeyField').value}`, {
             mode: `cors`
         });
 
@@ -19,10 +19,10 @@ const obtain = async () => {
         console.log(error);
     };
 };
-/* This is just a placeholder
-obtain().then(data => {
-    console.log(data);
-    body.textContent = `${data.main.temp}`;
-});
 
-*/
+const initiator = document.querySelector(`#processButton`);
+initiator.addEventListener(`click`, () => {
+    obtain().then((data) => {
+        console.log(data);
+    })
+})
