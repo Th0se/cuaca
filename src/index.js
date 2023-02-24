@@ -1,9 +1,8 @@
-import {
-    motherContainer
-} from './UI.js';
 import './styles.css';
-
-document.body.appendChild(motherContainer());
+import {
+    UI
+} from './UI.js';
+document.body.appendChild(UI());
 
 let target = `Purworejo`;
 

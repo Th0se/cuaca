@@ -5,7 +5,9 @@ module.exports = {
   mode: 'development',
   entry: {
     index: './src/index.js',
-    UI: './src/UI.js',
+    inputUI: './src/input.ui.js',
+    outputUI: './src/output.ui.js',
+    bridgedUI: './src/UI.js',
   },
   devtool: 'inline-source-map',
   plugins: [
