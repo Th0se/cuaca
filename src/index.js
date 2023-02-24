@@ -1,7 +1,6 @@
 import {
     motherContainer
 } from './UI.js';
-import grass from './assets/images/grass.jpg';
 import './styles.css';
 
 document.body.appendChild(motherContainer());
