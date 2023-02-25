@@ -4,11 +4,21 @@ const minTemp = () => {
     label.textContent = `Minimum temperature`;
     label.classList.add(
         `text-xl`,
-        `text-center`,
+        `flex`,
+        `flex-row`,
+        `justify-center`,
+        `items-center`,
     );
 
     const info = document.createElement(`div`);
-    info.classList.add(`infoDisplay`);
+    info.classList.add(
+        `text-center`,
+        `text-5xl`,
+        `flex`,
+        `flex-row`,
+        `justify-center`,
+        `items-center`,
+    );
     info.setAttribute(`id`, `minimumTemperature`)
 
     const container = document.createElement(`div`);
@@ -16,6 +26,8 @@ const minTemp = () => {
         `border-solid`,
         `border-amber-500`,
         `border-4`,
+        `grid`,
+        `grid-rows-2`,
     );
     container.appendChild(label);
     container.appendChild(info);
@@ -31,17 +43,29 @@ const maxTemp = () => {
     label.classList.add(
         `text-xl`,
         `text-center`,
+        `flex`,
+        `flex-row`,
+        `justify-center`,
+        `items-center`,
     );
 
     const info = document.createElement(`div`);
-    info.classList.add(`infoDisplay`);
+    info.setAttribute(`id`, `maximumTemperature`);
+    info.classList.add(
+        `flex`,
+        `text-5xl`,
+        `flex-row`,
+        `justify-center`,
+        `items-center`,
+    );
 
     const container = document.createElement(`div`);
-    container.setAttribute(`id`, `MaximumTemperature`);
     container.classList.add(
         `border-solid`,
         `border-amber-500`,
         `border-4`,
+        `grid`,
+        `grid-rows-2`,
     );
     container.appendChild(label);
     container.appendChild(info);
@@ -57,17 +81,30 @@ const pressure = () => {
     label.classList.add(
         `text-xl`,
         `text-center`,
+        `flex`,
+        `flex-row`,
+        `justify-center`,
+        `items-center`,
     );
 
     const info = document.createElement(`div`);
-    info.classList.add(`infoDisplay`);
+    info.setAttribute(`id`, `airPressure`);
+    info.classList.add(
+        `text-center`,
+        `text-5xl`,
+        `flex`,
+        `flex-row`,
+        `justify-center`,
+        `items-center`,
+    );
 
     const container = document.createElement(`div`);
-    container.setAttribute(`id`, `airPressure`);
     container.classList.add(
         `border-solid`,
         `border-amber-500`,
         `border-4`,
+        `grid`,
+        `grid-rows-2`,
     );
     container.appendChild(label);
     container.appendChild(info);
@@ -81,19 +118,31 @@ const humidity = () => {
     const label = document.createElement(`div`);
     label.classList.add(
         `text-xl`,
-        `text-center`,
+        `flex`,
+        `flex-row`,
+        `justify-center`,
+        `items-center`,
     );
     label.textContent = `Air Humidity`;
 
     const info = document.createElement(`div`);
-    info.classList.add(`infoDisplay`);
+    info.setAttribute(`id`, `airHumidity`);
+    info.classList.add(
+        `text-center`,
+        `text-5xl`,
+        `flex`,
+        `flex-row`,
+        `justify-center`,
+        `items-center`,
+    );
 
     const container = document.createElement(`div`);
-    container.setAttribute(`id`, `airHumidity`);
     container.classList.add(
         `border-solid`,
         `border-amber-500`,
         `border-4`,
+        `grid`,
+        `grid-rows-2`,
     );
     container.appendChild(label);
     container.appendChild(info);
@@ -131,14 +180,24 @@ const visibility = () => {
     label.textContent = `Visibility`;
     label.classList.add(
         `text-xl`,
-        `text-center`,
+        `flex`,
+        `flex-row`,
+        `justify-center`,
+        `items-center`,
     );
 
     const info = document.createElement(`div`);
-    info.classList.add(`infoDisplay`);
+    info.setAttribute(`id`, `visibility`);
+    info.classList.add(
+        `text-center`,
+        `text-5xl`,
+        `flex`,
+        `flex-row`,
+        `justify-center`,
+        `items-center`,
+    );
 
     const container = document.createElement(`div`);
-    container.setAttribute(`id`, `visibility`);
     container.classList.add(
         `border-solid`,
         `border-neutral-900`,
@@ -159,15 +218,25 @@ const clouds = () => {
     const label = document.createElement(`div`);
     label.classList.add(
         `text-xl`,
-        `text-center`,
+        `flex`,
+        `flex-row`,
+        `justify-center`,
+        `items-center`,
     );
     label.textContent = `Cloudiness`;
 
     const info = document.createElement(`div`);
-    info.classList.add(`infoDisplay`);
+    info.setAttribute(`id`, `clouds`);
+    info.classList.add(
+        `text-center`,
+        `text-5xl`,
+        `flex`,
+        `flex-row`,
+        `justify-center`,
+        `items-center`,
+    );
 
     const container = document.createElement(`div`);
-    container.setAttribute(`id`, `clouds`);
     container.classList.add(
         `border-solid`,
         `border-neutral-900`,
@@ -189,18 +258,30 @@ const windSpeed = () => {
     label.textContent = `Wind speed`;
     label.classList.add(
         `text-xl`,
-        `text-center`,
+        `flex`,
+        `flex-row`,
+        `justify-center`,
+        `items-center`,
     );
 
     const info = document.createElement(`div`);
-    info.classList.add(`infoDisplay`);
+    info.setAttribute(`id`, `windSpeed`);
+    info.classList.add(
+        `text-center`,
+        `text-5xl`,
+        `flex`,
+        `flex-row`,
+        `justify-center`,
+        `items-center`,
+    );
 
     const container = document.createElement(`div`);
-    container.setAttribute(`id`, `windSpeed`);
     container.classList.add(
         `border-solid`,
         `border-amber-500`,
         `border-4`,
+        `grid`,
+        `grid-rows-2`,
     );
     container.appendChild(label);
     container.appendChild(info);
@@ -215,17 +296,30 @@ const windDirection = () => {
     label.textContent = `Wind direction`;
     label.classList.add(
         `text-xl`,
-        `text-center`,
+        `flex`,
+        `flex-row`,
+        `justify-center`,
+        `items-center`,
     );
+
     const info = document.createElement(`div`);
-    info.classList.add(`infoDisplay`);
+    info.setAttribute(`id`, `windDirection`);
+    info.classList.add(
+        `text-center`,
+        `text-5xl`,
+        `flex`,
+        `flex-row`,
+        `justify-center`,
+        `items-center`,
+    );
 
     const container = document.createElement(`div`);
-    container.setAttribute(`id`, `windDiredtion`);
     container.classList.add(
         `border-solid`,
         `border-amber-500`,
         `border-4`,
+        `grid`,
+        `grid-rows-2`,
     );
     container.appendChild(label);
     container.appendChild(info);
@@ -240,18 +334,30 @@ const gust = () => {
     label.textContent = `Gust`;
     label.classList.add(
         `text-xl`,
-        `text-center`,
-    );
+        `flex`,
+        `flex-row`,
+        `justify-center`,
+        `items-center`,
+    );;
 
     const info = document.createElement(`div`);
-    info.classList.add(`infoDisplay`);
+    info.setAttribute(`id`, `gust`);
+    info.classList.add(
+        `text-center`,
+        `text-5xl`,
+        `flex`,
+        `flex-row`,
+        `justify-center`,
+        `items-center`,
+    );
 
     const container = document.createElement(`div`);
-    container.setAttribute(`id`, `gust`);
     container.classList.add(
         `border-solid`,
         `border-amber-500`,
         `border-4`,
+        `grid`,
+        `grid-rows-2`,
     );
     container.appendChild(label);
     container.appendChild(info);
@@ -288,17 +394,30 @@ const weatherGroup = () => {
     label.textContent = `Weather group`;
     label.classList.add(
         `text-xl`,
-        `text-center`,
+        `flex`,
+        `flex-row`,
+        `justify-center`,
+        `items-center`,
     );
+
     const info = document.createElement(`div`);
-    info.classList.add(`infoDisplay`);
+    info.setAttribute(`id`, `weatherGroup`)
+    info.classList.add(
+        `text-center`,
+        `text-5xl`,
+        `flex`,
+        `flex-row`,
+        `justify-center`,
+        `items-center`,
+    );
 
     const container = document.createElement(`div`);
-    container.setAttribute(`id`, `weatherGroup`);
     container.classList.add(
         `border-solid`,
         `border-amber-500`,
         `border-4`,
+        `grid`,
+        `grid-rows-2`,
     );
     container.appendChild(label);
     container.appendChild(info);
@@ -313,18 +432,30 @@ const weatherCondition = () => {
     label.textContent = `Weather Condition`;
     label.classList.add(
         `text-xl`,
-        `text-center`,
+        `flex`,
+        `flex-row`,
+        `justify-center`,
+        `items-center`,
     );
 
     const info = document.createElement(`div`);
-    info.classList.add(`infoDisplay`);
+    info.setAttribute(`id`, `weatherCondition`);
+    info.classList.add(
+        `text-center`,
+        `text-5xl`,
+        `flex`,
+        `flex-row`,
+        `justify-center`,
+        `items-center`,
+    );
 
     const container = document.createElement(`div`);
-    container.setAttribute(`id`, `weatherCondition`);
     container.classList.add(
         `border-solid`,
         `border-amber-500`,
         `border-4`,
+        `grid`,
+        `grid-rows-2`,
     );
     container.appendChild(label);
     container.appendChild(info);
@@ -361,18 +492,30 @@ const sunrise = () => {
     label.textContent = `Sunrise`;
     label.classList.add(
         `text-xl`,
-        `text-center`,
+        `flex`,
+        `flex-row`,
+        `justify-center`,
+        `items-center`,
     );
 
     const info = document.createElement(`div`);
-    info.classList.add(`infoDisplay`);
+    info.setAttribute(`id`, `sunrise`);
+    info.classList.add(
+        `text-center`,
+        `text-xl`,
+        `flex`,
+        `flex-row`,
+        `justify-center`,
+        `items-center`,
+    );
 
     const container = document.createElement(`div`);
-    container.setAttribute(`id`, `sunrise`);
     container.classList.add(
         `border-solid`,
         `border-amber-500`,
         `border-4`,
+        `grid`,
+        `grid-rows-2`,
     );
     container.appendChild(label);
     container.appendChild(info);
@@ -387,18 +530,30 @@ const sundown = () => {
     label.textContent = `Sundown`;
     label.classList.add(
         `text-xl`,
-        `text-center`,
+        `flex`,
+        `flex-row`,
+        `justify-center`,
+        `items-center`,
     );
 
     const info = document.createElement(`div`);
-    info.classList.add(`infoDisplay`);
+    info.setAttribute(`id`, `sundown`);
+    info.classList.add(
+        `text-center`,
+        `text-xl`,
+        `flex`,
+        `flex-row`,
+        `justify-center`,
+        `items-center`,
+    );
 
     const container = document.createElement(`div`);
-    container.setAttribute(`id`, `sundown`);
     container.classList.add(
         `border-solid`,
         `border-amber-500`,
         `border-4`,
+        `grid`,
+        `grid-rows-2`,
     );
     container.appendChild(label);
     container.appendChild(info);
