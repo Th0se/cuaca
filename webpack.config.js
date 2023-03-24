@@ -5,14 +5,16 @@ module.exports = {
   mode: 'development',
   entry: {
     index: './src/index.js',
+    header: './src/header.js',
     inputUI: './src/input.ui.js',
     outputUI: './src/output.ui.js',
+    footer: './src/footer.js',
     bridgedUI: './src/UI.js',
   },
   devtool: 'inline-source-map',
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'Cuaca menggunakan API Open Weather',
+      title: 'Weather Monitor',
     }),
   ],
   output: {
