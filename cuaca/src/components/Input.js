@@ -8,7 +8,7 @@ const InputForm = ({ setter }) => {
     const [countryCode, setCountryCode] = useState('');
     const getCoordinate = async (city, countryCode) => {
         const response = await fetch(
-            `http://api.openweathermap.org/geo/1.0/direct?q=` +
+            `https://api.openweathermap.org/geo/1.0/direct?q=` +
                 `${city}` +
                 `${countryCode}` +
                 `&limit=1&appid=973258e074924eb7be8763f1801a28b5`
@@ -20,7 +20,7 @@ const InputForm = ({ setter }) => {
     };
     const getWeatherPrediction = async (latitude, longitude) => {
         const response = await fetch(
-            `http://api.openweathermap.org/data/2.5/forecast?lat=` +
+            `https://api.openweathermap.org/data/2.5/forecast?lat=` +
                 `${latitude}` +
                 `&lon=` +
                 `${longitude}` +

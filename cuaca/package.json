@@ -6,8 +6,11 @@
         "@testing-library/jest-dom": "^5.17.0",
         "@testing-library/react": "^13.4.0",
         "@testing-library/user-event": "^13.5.0",
+        "gh-pages": "^6.0.0",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
+        "react-router": "^6.15.0",
+        "react-router-dom": "^6.15.0",
         "react-scripts": "5.0.1",
         "web-vitals": "^2.1.4"
     },
@@ -17,7 +20,9 @@
         "test": "react-scripts test",
         "eject": "react-scripts eject",
         "styleguide": "styleguidist server",
-        "styleguide:build": "styleguidist build"
+        "styleguide:build": "styleguidist build",
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d build"
     },
     "eslintConfig": {
         "extends": [
@@ -40,5 +45,6 @@
     "devDependencies": {
         "@tailwindcss/forms": "^0.5.5",
         "tailwindcss": "^3.3.3"
-    }
+    },
+    "homepage": "https://Th0se.github.io/cuaca"
 }
