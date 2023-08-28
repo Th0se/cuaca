@@ -3,8 +3,8 @@
 # About
 
 A webpage written with React and styled with TailwindCSS, 'Cuaca' was made to
-provide GUI for OpenWeatherMap's weather API. To use, simply enter your city
-name and country code.
+obtain prediction for the weather every three hours for the next 120 hours. To
+use, simply enter your city name and country code.
 
 _This webpage is deployed using gh-pages._
 
